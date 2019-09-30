@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="huyennguyen" created="September 29, 2019 at 5:38:02 PM CDT" modified="September 29, 2019 at 11:11:53 PM CDT" specVersion="4" urnVersion="1.27" nextGlobalID="38">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="huyennguyen" created="September 29, 2019 at 5:38:02 PM CDT" modified="September 30, 2019 at 1:27:33 PM CDT" specVersion="8" urnVersion="1.27" nextGlobalID="46">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup5" id="5">
       <scenarios name="ScenarioDef6" id="6"/>
     </scenarioGroups>
   </ucmspec>
   <grlspec>
-    <intElements name="Do useful research" id="15" linksDest="23 25" refs="16"/>
-    <intElements name="Use DB info" id="17" linksDest="33" linksSrc="23" type="Task" refs="18"/>
-    <intElements name="Use survey only" id="19" linksSrc="25" type="Task" refs="20"/>
-    <intElements name="Reach Agreement" id="27" linksSrc="33" type="Goal" refs="28"/>
+    <intElements name="Do useful research" id="15" linksDest="23 25" fillColor="254,255,255" filled="true" refs="16"/>
+    <intElements name="Use DB info" id="17" linksDest="33" linksSrc="23" type="Task" fillColor="254,255,255" filled="true" refs="18"/>
+    <intElements name="Use survey only" id="19" linksSrc="25" type="Task" fillColor="254,255,255" filled="true" refs="20"/>
+    <intElements name="Reach Agreement" id="27" linksSrc="33" type="Goal" fillColor="254,255,255" filled="true" refs="28"/>
     <actors name="Researcher" id="35" fillColor="251,204,255" filled="true" contRefs="36"/>
     <links xsi:type="grl:Contribution" name="Contribution23" id="23" refs="//@urndef/@specDiagrams.0/@connections.0" dest="15" src="17"/>
     <links xsi:type="grl:Contribution" name="Contribution25" id="25" refs="//@urndef/@specDiagrams.0/@connections.1" dest="15" src="19" contribution="SomeNegative" quantitativeContribution="-75"/>
@@ -41,7 +41,7 @@
         <metadata name="_width" value="108"/>
         <metadata name="_height" value="46"/>
       </nodes>
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef36" id="36" x="238" y="83" width="492" height="424" contDef="35">
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef36" id="36" x="224" y="75" width="492" height="424" contDef="35">
         <label/>
       </contRefs>
       <connections xsi:type="grl:LinkRef" source="18" target="16" link="23">
