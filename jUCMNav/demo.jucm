@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="huyennguyen" created="September 29, 2019 at 5:38:02 PM CDT" modified="September 29, 2019 at 11:11:53 PM CDT" specVersion="4" urnVersion="1.27" nextGlobalID="38">
+  <ucmspec>
+    <scenarioGroups name="ScenarioGroup5" id="5">
+      <scenarios name="ScenarioDef6" id="6"/>
+    </scenarioGroups>
+  </ucmspec>
+  <grlspec>
+    <intElements name="Do useful research" id="15" linksDest="23 25" refs="16"/>
+    <intElements name="Use DB info" id="17" linksDest="33" linksSrc="23" type="Task" refs="18"/>
+    <intElements name="Use survey only" id="19" linksSrc="25" type="Task" refs="20"/>
+    <intElements name="Reach Agreement" id="27" linksSrc="33" type="Goal" refs="28"/>
+    <actors name="Researcher" id="35" fillColor="251,204,255" filled="true" contRefs="36"/>
+    <links xsi:type="grl:Contribution" name="Contribution23" id="23" refs="//@urndef/@specDiagrams.0/@connections.0" dest="15" src="17"/>
+    <links xsi:type="grl:Contribution" name="Contribution25" id="25" refs="//@urndef/@specDiagrams.0/@connections.1" dest="15" src="19" contribution="SomeNegative" quantitativeContribution="-75"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition33" id="33" refs="//@urndef/@specDiagrams.0/@connections.2" dest="17" src="27"/>
+    <groups name="StrategiesGroup3" id="3" strategies="4"/>
+    <strategies name="EvaluationStrategy4" id="4" author="huyennguyen" group="3"/>
+    <impactModel/>
+    <indicatorGroup name="Time" id="7" isRedesignCategory="true"/>
+    <indicatorGroup name="Cost" id="8" isRedesignCategory="true"/>
+    <indicatorGroup name="Quality" id="9" isRedesignCategory="true"/>
+    <indicatorGroup name="Flexibility" id="10" isRedesignCategory="true"/>
+    <featureModel/>
+  </grlspec>
+  <urndef>
+    <specDiagrams xsi:type="grl:GRLGraph" name="DemoGraph" id="2">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef16" id="16" x="433" y="119" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.1" def="15">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef18" id="18" x="315" y="284" succ="//@urndef/@specDiagrams.0/@connections.0" pred="//@urndef/@specDiagrams.0/@connections.2" def="17">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef20" id="20" x="572" y="280" succ="//@urndef/@specDiagrams.0/@connections.1" def="19">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef28" id="28" x="315" y="402" succ="//@urndef/@specDiagrams.0/@connections.2" def="27">
+        <metadata name="_width" value="108"/>
+        <metadata name="_height" value="46"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef36" id="36" x="238" y="83" width="492" height="424" contDef="35">
+        <label/>
+      </contRefs>
+      <connections xsi:type="grl:LinkRef" source="18" target="16" link="23">
+        <label deltaX="27" deltaY="-47"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="20" target="16" link="25">
+        <label deltaX="-36" deltaY="-63"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="28" target="18" link="33"/>
+    </specDiagrams>
+  </urndef>
+  <metadata name="_Use0to100EvaluationRange" value="false"/>
+</urn:URNspec>
